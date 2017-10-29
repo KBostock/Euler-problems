@@ -1,0 +1,137 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4316,        129]
+NotebookOptionsPosition[      3354,         96]
+NotebookOutlinePosition[      3710,        112]
+CellTagsIndexPosition[      3667,        109]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Euler 31", "Section",
+ CellChangeTimes->{{3.7181025335511503`*^9, 3.718102536931698*^9}, 
+   3.7181027562966957`*^9, {3.7181030527890863`*^9, 3.718103053228177*^9}, {
+   3.7181037115470133`*^9, 3.718103712191238*^9}, {3.718104157070587*^9, 
+   3.7181041576903954`*^9}, 3.718104704666651*^9, {3.718105673353528*^9, 
+   3.718105673798843*^9}},ExpressionUUID->"39dc46b0-2550-46d1-8f60-\
+6043896fffa7"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+How many different ways can \[Sterling]2 be made using any number of coins?\
+\>", "Subsection",
+ CellChangeTimes->{
+  3.718103984189946*^9, {3.71810405291273*^9, 3.718104054059638*^9}, {
+   3.718104180543342*^9, 3.718104221223153*^9}, 3.7181047513164883`*^9, 
+   3.718104810628894*^9, 3.718105683387713*^9, {3.718105820849135*^9, 
+   3.7181058275478783`*^9}},ExpressionUUID->"b8de3d9c-e2f5-48cb-98cf-\
+1f98c20fb86e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"IntegerPartitions", "[", 
+  RowBox[{"200", ",", "kspec", ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", "2", ",", "5", ",", "10", ",", "20", ",", "50", ",", "100", ",",
+      "200"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7181058777966843`*^9, 
+  3.718105928835143*^9}},ExpressionUUID->"e0c09847-df5e-453b-85ed-\
+cc94c01037af"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "IntegerPartitions","nninfseq",
+   "\"Position \\!\\(\\*RowBox[{\\\"2\\\"}]\\) of \
+\\!\\(\\*RowBox[{\\\"IntegerPartitions\\\", \\\"[\\\", RowBox[{\\\"200\\\", \
+\\\",\\\", \\\"kspec\\\", \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"1\\\", \\\
+\",\\\", \\\"2\\\", \\\",\\\", \\\"5\\\", \\\",\\\", \\\"10\\\", \\\",\\\", \
+\\\"20\\\", \\\",\\\", \\\"50\\\", \\\",\\\", \\\"100\\\", \\\",\\\", \\\"200\
+\\\"}], \\\"}\\\"}]}], \\\"]\\\"}]\\) must be All, Infinity, a non-negative \
+integer, or a List whose first element (required) is a non-negative integer, \
+second element (optional) is a non-negative integer or Infinity, and third \
+element (optional) is a nonzero integer.\"",2,76,47,23761580071594513279,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.718105930233554*^9},ExpressionUUID->"ff86e14c-a4c7-4d5f-a375-\
+4c7a96a78394"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"IntegerPartitions", "[", 
+   RowBox[{"200", ",", "All", ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "1", ",", "2", ",", "5", ",", "10", ",", "20", ",", "50", ",", "100", 
+      ",", "200"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.71810599246292*^9, 
+  3.718106007612997*^9}},ExpressionUUID->"613da8a8-e677-4659-bb31-\
+48745c84d85f"],
+
+Cell[BoxData["73682"], "Output",
+ CellChangeTimes->{{3.718105998830882*^9, 
+  3.718106008278613*^9}},ExpressionUUID->"2b3eca80-3ba9-4998-a7f0-\
+c3ae2a1e3d99"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{603, 655},
+WindowMargins->{{188, Automatic}, {23, Automatic}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 404, 6, 64, "Section", "ExpressionUUID" -> \
+"39dc46b0-2550-46d1-8f60-6043896fffa7"],
+Cell[CellGroupData[{
+Cell[1009, 32, 426, 8, 69, "Subsection", "ExpressionUUID" -> \
+"b8de3d9c-e2f5-48cb-98cf-1f98c20fb86e"],
+Cell[CellGroupData[{
+Cell[1460, 44, 364, 9, 32, "Input", "ExpressionUUID" -> \
+"e0c09847-df5e-453b-85ed-cc94c01037af"],
+Cell[1827, 55, 892, 16, 96, "Message", "ExpressionUUID" -> \
+"ff86e14c-a4c7-4d5f-a375-4c7a96a78394"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2756, 76, 397, 10, 54, InheritFromParent, "ExpressionUUID" -> \
+"613da8a8-e677-4659-bb31-48745c84d85f"],
+Cell[3156, 88, 158, 3, 66, "Output", "ExpressionUUID" -> \
+"2b3eca80-3ba9-4998-a7f0-c3ae2a1e3d99"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

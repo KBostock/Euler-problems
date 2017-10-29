@@ -1,0 +1,141 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3995,        133]
+NotebookOptionsPosition[      3178,        104]
+NotebookOutlinePosition[      3534,        120]
+CellTagsIndexPosition[      3491,        117]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Euler 48", "Section",
+ CellChangeTimes->{{3.7181025335511503`*^9, 3.718102536931698*^9}, 
+   3.7181027562966957`*^9, {3.7181030527890863`*^9, 3.718103053228177*^9}, {
+   3.7181037115470133`*^9, 3.718103712191238*^9}, {3.718104157070587*^9, 
+   3.7181041576903954`*^9}},ExpressionUUID->"066bc0c7-6e94-4160-ab58-\
+24a777ec54cc"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Find the last ten digits of the series, ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["1", "1"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "3674f55c-38fc-42a9-8033-99dc035e7a0e"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["2", "2"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "c7049db1-74b9-43ad-b096-5ce10afb7dfc"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["3", "3"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "a8614c22-57e3-463c-b3a3-9ff59e470a5e"],
+ " + ... + ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["1000", "1000"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "4b660c83-221c-4d83-84b9-bc8c2674a819"]
+}], "Subsection",
+ CellChangeTimes->{
+  3.718103984189946*^9, {3.71810405291273*^9, 3.718104054059638*^9}, {
+   3.718104180543342*^9, 
+   3.718104221223153*^9}},ExpressionUUID->"fc250c35-8984-4023-9127-\
+7c3a9ba2eedc"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", 
+  RowBox[{"x", "^", "x", " "}]}]], "Input",
+ CellChangeTimes->{{3.718104264925959*^9, 3.718104275173067*^9}, 
+   3.718104315192893*^9, {3.7181045273330107`*^9, 
+   3.7181045629825907`*^9}},ExpressionUUID->"0b262283-a81b-42b0-949d-\
+5b01d7e37408"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Take", "[", 
+  RowBox[{
+   RowBox[{"IntegerDigits", "[", 
+    RowBox[{"Total", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"f", "[", "x", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "1", ",", "1000"}], "}"}]}], "]"}], "]"}], "]"}], 
+   ",", 
+   RowBox[{"-", "10"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7181043829802094`*^9, 3.7181044812611113`*^9}, {
+  3.718104577807538*^9, 
+  3.718104637746314*^9}},ExpressionUUID->"13f8a744-6612-4e88-b8a1-\
+616f15b1d440"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "9", ",", "1", ",", "1", ",", "0", ",", "8", ",", "4", ",", "6", ",", "7", 
+   ",", "0", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{{3.718104426498878*^9, 3.718104450858863*^9}, 
+   3.718104482387433*^9, {3.718104546357738*^9, 
+   3.718104639031727*^9}},ExpressionUUID->"39ae5cac-a980-4b5d-bf8c-\
+ed231a4a7f52"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 655},
+WindowMargins->{{188, Automatic}, {23, Automatic}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 332, 5, 64, "Section", "ExpressionUUID" -> \
+"066bc0c7-6e94-4160-ab58-24a777ec54cc"],
+Cell[CellGroupData[{
+Cell[937, 31, 978, 30, 45, "Subsection", "ExpressionUUID" -> \
+"fc250c35-8984-4023-9127-7c3a9ba2eedc"],
+Cell[1918, 63, 310, 7, 32, "Input", "ExpressionUUID" -> \
+"0b262283-a81b-42b0-949d-5b01d7e37408"],
+Cell[CellGroupData[{
+Cell[2253, 74, 523, 15, 32, "Input", "ExpressionUUID" -> \
+"13f8a744-6612-4e88-b8a1-616f15b1d440"],
+Cell[2779, 91, 359, 8, 66, "Output", "ExpressionUUID" -> \
+"39ae5cac-a980-4b5d-bf8c-ed231a4a7f52"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,117 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3591,        109]
+NotebookOptionsPosition[      2873,         82]
+NotebookOutlinePosition[      3228,         98]
+CellTagsIndexPosition[      3185,         95]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Euler 4", "Section",
+ CellChangeTimes->{{3.7181025335511503`*^9, 3.718102536931698*^9}, 
+   3.7181027562966957`*^9, {3.7181030527890863`*^9, 3.718103053228177*^9}, {
+   3.7181037115470133`*^9, 3.718103712191238*^9}, {3.718104157070587*^9, 
+   3.7181041576903954`*^9}, 3.718104704666651*^9, {3.718105673353528*^9, 
+   3.718105673798843*^9}, {3.718106067087756*^9, 3.718106067411203*^9}, {
+   3.7181070013505173`*^9, 
+   3.7181070019339933`*^9}},ExpressionUUID->"695288c1-00c3-4984-aa13-\
+625b01a12525"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Find the largest palindrome made from the product of two 3-digit numbers.\
+\>", "Subsection",
+ CellChangeTimes->{
+  3.718103984189946*^9, {3.71810405291273*^9, 3.718104054059638*^9}, {
+   3.718104180543342*^9, 3.718104221223153*^9}, 3.7181047513164883`*^9, 
+   3.718104810628894*^9, 3.718105683387713*^9, {3.718105820849135*^9, 
+   3.7181058275478783`*^9}, 3.7181060854758453`*^9, {3.718107004649086*^9, 
+   3.7181070176045094`*^9}},ExpressionUUID->"0939086a-bf24-41af-a326-\
+132a4165a13d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", "\[IndentingNewLine]", 
+  RowBox[{"Select", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Flatten", "[", "\[IndentingNewLine]", 
+     RowBox[{"Table", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Apply", "[", "\[IndentingNewLine]", 
+        RowBox[{"Times", ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Range", "[", "999", "]"}], ",", "x"}], "}"}]}], "]"}], 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "1", ",", "999"}], "}"}]}], "]"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"IntegerDigits", "[", "#", "]"}], "\[Equal]", 
+      RowBox[{"Reverse", "[", 
+       RowBox[{"IntegerDigits", "[", "#", "]"}], "]"}]}], "&"}]}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.71810750342754*^9, 3.718107583677596*^9}, {
+  3.7181076324297333`*^9, 3.7181078930948153`*^9}, {3.7181080404278727`*^9, 
+  3.718108064252207*^9}},ExpressionUUID->"7aec853c-8552-4640-8516-\
+a1073ea2a965"],
+
+Cell[BoxData["906609"], "Output",
+ CellChangeTimes->{
+  3.718107820601633*^9, {3.718107862726034*^9, 3.718107895837335*^9}, 
+   3.718108078774356*^9},ExpressionUUID->"8b83b278-c8a9-441d-885e-\
+2597a4443b5e"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{988, 655},
+WindowMargins->{{Automatic, 97}, {Automatic, 29}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 507, 8, 64, "Section", "ExpressionUUID" -> \
+"695288c1-00c3-4984-aa13-625b01a12525"],
+Cell[CellGroupData[{
+Cell[1112, 34, 500, 9, 44, "Subsection", "ExpressionUUID" -> \
+"0939086a-bf24-41af-a326-132a4165a13d"],
+Cell[CellGroupData[{
+Cell[1637, 47, 986, 24, 138, "Input", "ExpressionUUID" -> \
+"7aec853c-8552-4640-8516-a1073ea2a965"],
+Cell[2626, 73, 207, 4, 66, "Output", "ExpressionUUID" -> \
+"8b83b278-c8a9-441d-885e-2597a4443b5e"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

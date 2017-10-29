@@ -1,0 +1,103 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2675,         95]
+NotebookOptionsPosition[      1958,         68]
+NotebookOutlinePosition[      2314,         84]
+CellTagsIndexPosition[      2271,         81]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Euler 24", "Section",
+ CellChangeTimes->{{3.7181025335511503`*^9, 3.718102536931698*^9}, 
+   3.7181027562966957`*^9, {3.7181030527890863`*^9, 3.718103053228177*^9}, {
+   3.7181037115470133`*^9, 
+   3.718103712191238*^9}},ExpressionUUID->"76e67163-e18b-4da8-adb0-\
+a4490c503ac6"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, \
+5, 6, 7, 8 and 9?\
+\>", "Subsection",
+ CellChangeTimes->{
+  3.718103984189946*^9, {3.71810405291273*^9, 
+   3.718104054059638*^9}},ExpressionUUID->"eb36fc35-db2e-49cc-8fbb-\
+f4da458eb7c3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sort", "[", 
+   RowBox[{"Permutations", "[", 
+    RowBox[{"Range", "[", 
+     RowBox[{"0", ",", "9"}], "]"}], "]"}], "]"}], "[", 
+  RowBox[{"[", 
+   RowBox[{"1", "*", 
+    SuperscriptBox["10", "6"]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7181039912756367`*^9, 3.718104042007625*^9}, {
+  3.718104078510757*^9, 
+  3.7181040992881813`*^9}},ExpressionUUID->"9c587234-c99f-4fd8-8b6f-\
+22c9de5d0732"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2", ",", "7", ",", "8", ",", "3", ",", "9", ",", "1", ",", "5", ",", "4", 
+   ",", "6", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{{3.718104085657427*^9, 
+  3.718104101662217*^9}},ExpressionUUID->"13d56ec8-6d45-4a77-b437-\
+d57ca4d8a88e"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 655},
+WindowMargins->{{188, Automatic}, {Automatic, 38}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 284, 5, 64, "Section", "ExpressionUUID" -> \
+"76e67163-e18b-4da8-adb0-a4490c503ac6"],
+Cell[CellGroupData[{
+Cell[889, 31, 277, 7, 69, "Subsection", "ExpressionUUID" -> \
+"eb36fc35-db2e-49cc-8fbb-f4da458eb7c3"],
+Cell[CellGroupData[{
+Cell[1191, 42, 438, 12, 35, "Input", "ExpressionUUID" -> \
+"9c587234-c99f-4fd8-8b6f-22c9de5d0732"],
+Cell[1632, 56, 286, 7, 66, "Output", "ExpressionUUID" -> \
+"13d56ec8-6d45-4a77-b437-d57ca4d8a88e"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
